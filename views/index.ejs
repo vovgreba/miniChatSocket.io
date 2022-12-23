@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.agilecss.com/agile.css" >
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="row container m-v-4">
+    <div class="col-md-6 col-lg-4 margin-left-right-auto p0 shadow-3 p1">
+
+        <div class="tabscontainer">
+            <div class="tabs">
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone" class-="white">Login</label>
+                <div class="tab" style="padding: 0;">
+                    <div class="outline-light-grey rounded p2 m-v-2">
+                        <p class="h5 black font-weight-400 m-v-1">Login to your Account</p>
+                        <form class="m-v-4" action="/login" enctype="multipart/form-data" method="post" name="login">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="text-uppercase font-weight-400 smaller" style="background-color: #fff; color: #000; margin: 0; padding: 0;">Email:</label>
+                                <input type="email" class="form-control m-v-1" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="text-uppercase font-weight-400 smaller" style="background-color: #fff; color: #000; margin: 0; padding: 0;">Password:</label>
+                                <input type="password" class="form-control m-v-1" id="exampleInputPassword1" name="pasword">
+                            </div>
+                            <div class="float-left">
+                                <button type="submit" class=" login-btn btn btn-primary m-v-1 text-uppercase bg-dark">Login</button>
+                            </div>
+                            <div class="float-right m-v-1">
+                                <a href="#" class="small">Forgot Password?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <input type="radio" name="tabs" id="tabtwo">
+                <label for="tabtwo">Register</label>
+                <div class="tab" style="padding: 0;">
+                    <div class="outline-light-grey rounded p2 m-v-2">
+                        <p class="h5 black font-weight-400 m-v-1">Register for an Account </p>
+                        <form class="m-v-4" action="registration" enctype="multipart/form-data" method="post">
+                            <div class="form-group m-v-1">
+                                <label for="exampleInputName1" class="text-uppercase smaller font-weight-400" style="background-color: #fff; color: #000; margin: 0; padding: 0;">Login:</label>
+                                <input type="text" class="form-control m-v-1" id="exampleInputFirstName1" name="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group m-v-1">
+                                <label for="exampleInputPassword2" class="text-uppercase smaller font-weight-400 m-v-1" style="background-color: #fff; color: #000; margin: 0; padding: 0;">CHOOSE
+                                    PASSWORD:</label>
+                                <input type="password" class="form-control m-v-1" id="exampleInputPassword2" name="pasword">
+                            </div>
+                            <div class="form-group m-v-1">
+                                <label for="exampleInputPassword3" class="text-uppercase smaller font-weight-400 m-v-1" style="background-color: #fff; color: #000; margin: 0; padding: 0;">RE-ENTER
+                                    PASSWORD:</label>
+                                <input type="password" class="form-control m-v-1" id="exampleInputPassword3" name="pasword">
+                            </div>
+                            <div class="float-left">
+                                <button type="submit" class="btn btn-primary m-v-1 text-uppercase bg-dark">register
+                                    now</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./scripts/form.js"></script>
+</body>
+</html>

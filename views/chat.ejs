@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.agilecss.com/agile.css" >
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+<section class="chat">
+  <div class=" container row topmargin   bg-light-grey p-v-1 rounded">
+    <div class="rooms col-3 p0 bg-white" style="overflow-y: scroll; height:500px;">
+        <div class="general p05 outline-light-grey  brightness-95" id="dialougeOpener1">
+            <div class="row">
+                <div class="col-12 p0">
+                    <div class="row">
+                        <div class="col-4 col-md-4 col-lg-3">
+                            <img src="./images/avatar.png" class="circle icon-sm">
+                        </div>
+                        <div class="col left">
+                            <p class="m0 p0 black font-weight-400">Admin</p>
+                            <p class="font-weight-400 dark italic small m0">May 23, 2020 at 11:44 am
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-9">
+
+
+
+        <div class="dialoges tab p1 bg-light-grey" style="overflow-y: scroll; height:500px;">
+
+            <div id="dialouge">
+                <div class="p1 outline-light-grey rounded w-100 m-v-1  bg-white">
+                    <div class="row">
+                        <div class="col-8 p0">
+                            <div class="row">
+                                <div class="col-4 col-md-2 col-lg-1 p0">
+                                    <img src="./images/avatar.png" class="circle icon-sm">
+                                </div>
+                                <div class="col left">
+                                    <p class="m0 p0 black font-weight-400">Admin</p>
+                                    <p class="font-weight-400 dark italic small m0">May 24, 2020 at 10:46 am
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right col-3 col-md-4">
+                            <a href="#">
+                                <svg viewBox="0 0 24 24" class="icon-s img-responsive hover-shadow">
+                                    <path fill="#ccc" d="M10,9V5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9Z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-v-1">
+                        <p class="font-weight-400 m0">Donec sed odio dui. Nulla vitae elit libero, a
+                            pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer
+                            posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="row topmargin">
+            <div class="position-absolute bottom-0 bg-light-grey w-100  ">
+                <form id="send-message">
+                    <div class="form-group row p-h-1">
+                      <input type="text" class="form-control col-3 message-input-name">
+                      <input type="text" class="form-control col-8 message-input" rows="1" id="comment" placeholder="Type a message">
+
+                        
+                        
+                      <button type="submit" class="btn btn-primary col-3 m0 m-t-1">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+  <script src="../socket.io/socket.io.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
